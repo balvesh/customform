@@ -1,0 +1,20 @@
+
+<table class="data table" id="customform-data-table">
+    <caption class="table-caption">Form Data</caption>
+    <thead>
+        <tr>
+            <th scope="col" class="col name">Name</th>
+            <th scope="col" class="col author">Email</th>
+            <th scope="col" class="col created_at">Created At</th>
+        </tr>
+    </thead>
+    <tbody>
+        <?php foreach ($block->getFormData() as $key => $data): ?>
+            <tr>
+                <td data-th="Name" class="col name"><?= $data->getName(); ?></td>
+                <td data-th="Email" class="col email"><?=$data->getEmail(); ?></td>
+                <td data-th="Date" class="col created_at"><?php echo $data->getCreatedAt(); ?></td>
+            </tr>
+        <?php endforeach; ?>
+    </tbody>
+</table>

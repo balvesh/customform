@@ -1,0 +1,7 @@
+<?xml version="1.0" ?>
+<config xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="urn:magento:module:Magento_Backend:etc/menu.xsd">
+	<menu>
+		<add id="Learning::top_level" title="Learning" module="Learning_Customform" sortOrder="9999" resource="Magento_Backend::content"/>
+		<add id="Learning_Customform::learning_customform_customform" title="CustomForm" module="Learning_Customform" sortOrder="9999" resource="Magento_Backend::content" parent="Learning::top_level" action="learning_customform/customform/index"/>
+	</menu>
+</config>
